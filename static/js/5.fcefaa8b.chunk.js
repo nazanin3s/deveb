@@ -1,2 +1,0 @@
-(this["webpackJsonpam-arc"]=this["webpackJsonpam-arc"]||[]).push([[5],{83:function(e,r,t){"use strict";t.r(r),t.d(r,"default",(function(){return n}));t(2);var c=t(0);function n(){return Object(c.jsx)("section",{className:"q-seperator",children:Object(c.jsx)("h2",{children:"computer generated imagery (CGI)"})})}}}]);
-//# sourceMappingURL=5.fcefaa8b.chunk.js.map
