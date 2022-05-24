@@ -8,9 +8,13 @@ const { errorHandler, errorMiddleWare } = require('./ErrorHandlers')
 const { sendContactForm } = require('./Controllers')
 const uploadForUserPhoto = require('./utils/multerFuncs')
 
+const corsOptions = {
+  origin: 'https://deveb-api.herokuapp.com',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
 const app = express()
-app.use( cors() )
+app.use( cors(corsOptions) )
 app.use( helmet() )
 app.use( morgan('common') )
 app.use( express.json() )
@@ -25,7 +29,7 @@ app.post('/api/send', uploadForUserPhoto.array("attachs",20), sendContactForm)
 app.use(errorMiddleWare)
 app.use(errorHandler)
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3000
 console.log(process.env.PORT)
 app.listen( port, () => {
   console.log(`Listening on port ${port}`)
