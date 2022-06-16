@@ -1,0 +1,2 @@
+(this.webpackJsonpdeveb=this.webpackJsonpdeveb||[]).push([[4],{117:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return c}));n(1);var r=n(0);function c(){return Object(r.jsx)("section",{className:"q-seperator",children:Object(r.jsx)("h2",{children:"computer generated imagery (CGI)"})})}}}]);
+//# sourceMappingURL=4.7d1c4f83.chunk.js.map
